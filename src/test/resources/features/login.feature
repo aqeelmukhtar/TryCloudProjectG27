@@ -12,6 +12,8 @@ Feature: As a user, I should be able to log in.
     Examples:
       | username | password    |
       | user7    | Userpass123 |
+      | user34   | Userpass123 |
+      | user99   | Userpass123 |
 
 
 
