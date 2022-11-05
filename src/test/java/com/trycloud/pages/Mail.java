@@ -1,2 +1,4 @@
-package com.trycloud.pages;public class Mail {
+package com.trycloud.pages;
+
+public class Mail {
 }

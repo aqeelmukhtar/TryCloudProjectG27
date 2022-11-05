@@ -1,2 +1,4 @@
-package com.trycloud.pages;public class Activity {
+package com.trycloud.pages;
+
+public class Activity {
 }

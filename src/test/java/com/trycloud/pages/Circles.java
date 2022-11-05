@@ -1,2 +1,4 @@
-package com.trycloud.pages;public class Circles {
+package com.trycloud.pages;
+
+public class Circles {
 }

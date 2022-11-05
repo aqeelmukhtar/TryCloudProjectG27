@@ -1,2 +1,4 @@
-package com.trycloud.pages;public class Contacts {
+package com.trycloud.pages;
+
+public class Contacts {
 }

@@ -1,2 +1,4 @@
-package com.trycloud.pages;public class Deckl {
+package com.trycloud.pages;
+
+public class Deck {
 }

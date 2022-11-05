@@ -1,2 +1,4 @@
-package com.trycloud.pages;public class Calendar {
+package com.trycloud.pages;
+
+public class Calendar {
 }

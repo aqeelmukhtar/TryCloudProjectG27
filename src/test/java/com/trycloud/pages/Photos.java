@@ -1,2 +1,4 @@
-package com.trycloud.pages;public class Photos {
+package com.trycloud.pages;
+
+public class Photos {
 }

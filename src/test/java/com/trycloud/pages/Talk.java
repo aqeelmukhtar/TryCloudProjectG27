@@ -1,2 +1,4 @@
-package com.trycloud.pages;public class Talk {
+package com.trycloud.pages;
+
+public class Talk {
 }
