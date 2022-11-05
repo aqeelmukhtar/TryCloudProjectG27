@@ -17,7 +17,7 @@ public class Login_step_def extends BasePage {
     @Given("user on the login page")
     public void user_on_the_login_page() {
 
-        Driver.getDriver().get(ConfigurationReader.getProperty("url"));
+        Driver.getDriver().get("http://qa3.trycloud.net/index.php/login?clear=1");
 
     }
     @When("user use username {string} and passcode {string}")

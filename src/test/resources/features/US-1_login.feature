@@ -5,7 +5,7 @@ Feature: As a user, I should be able to log in.
     Given user on the login page
     When user use username "<username>" and passcode "<password>"
     And user click the login button
-    Then verify the user should be at the "dashboard" page
+    Then verify the user should be at the "Dashboard" page
 
     Examples:
       | username | password    |
