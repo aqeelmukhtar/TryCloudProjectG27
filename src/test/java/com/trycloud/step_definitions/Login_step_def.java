@@ -16,14 +16,13 @@ public class Login_step_def extends BasePage {
 
     @Given("user on the login page")
     public void user_on_the_login_page() {
-
         Driver.getDriver().get("http://qa3.trycloud.net/index.php/login?clear=1");
 
     }
     @When("user use username {string} and passcode {string}")
-    public void userUseUsernameAndPasscode(String arg0, String arg1) {
-       login.username.sendKeys(arg0);
-       login.password.sendKeys(arg1);
+    public void userUseUsernameAndPasscode(String user, String pass) {
+       login.username.sendKeys(user);
+       login.password.sendKeys(pass);
     }
 
     @When("user click the login button")
