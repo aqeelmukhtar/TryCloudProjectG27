@@ -20,4 +20,8 @@ public class Login {
     @FindBy(id = "submit-form")
     public WebElement loginButton;
 
+    public void  otologin(){
+        Driver.getDriver().get("http://qa3.trycloud.net");
+    }
+
 }
