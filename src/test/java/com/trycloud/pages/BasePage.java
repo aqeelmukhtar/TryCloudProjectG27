@@ -7,8 +7,8 @@ import org.openqa.selenium.support.PageFactory;
 
 public abstract class BasePage {
 
-    public BasePage(){
-        PageFactory.initElements(Driver.getDriver(),this);
+    public BasePage() {
+        PageFactory.initElements(Driver.getDriver(), this);
     }
 
     @FindBy(xpath = "(//a[@aria-label='Dashboard'])[1]")
@@ -41,8 +41,44 @@ public abstract class BasePage {
     @FindBy(xpath = "(//a[@aria-label='Deck'])[1]")
     public WebElement deck;
 
+    public void module(String string) {
+
+        switch (string) {
+
+            case "dashboard":
+                dashboard.click();
+                break;
+            case "files":
+                files.click();
+                break;
+            case "photos":
+                photos.click();
+                break;
+            case "activity":
+                activity.click();
+                break;
+            case "talk":
+                talk.click();
+                break;
+            case "mail":
+                mail.click();
+                break;
+            case "contacts":
+                contacts.click();
+                break;
+            case "circles":
+                circles.click();
+                break;
+            case "calendar":
+                calendar.click();
+                break;
+            case "deck":
+                deck.click();
+                break;
 
 
+        }
+    }
 
 
 }
