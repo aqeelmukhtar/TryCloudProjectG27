@@ -3,20 +3,20 @@ package com.trycloud.step_definitions;
 import com.trycloud.pages.BasePage;
 import com.trycloud.pages.CommentFile;
 import com.trycloud.pages.Login;
+import com.trycloud.utilities.BrowserUtils;
 import com.trycloud.utilities.ConfigurationReader;
+import com.trycloud.utilities.Driver;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class CommentFiles_Step_Definition extends BasePage {
     Login login = new Login();
     CommentFile commentFiles = new CommentFile();
-
-    String expectedMessage = "hello";
-
-
 
     @Given("user on the dashboard page")
     public void user_on_the_dashboard_page() {
@@ -35,8 +35,8 @@ public class CommentFiles_Step_Definition extends BasePage {
 
     }
 
-    @And("user write  {string} inside the input box")
-    public void userWriteAInsideTheInputBox(String comment) {
+    @And("user write a comment inside the input box")
+    public void userWriteAInsideTheInputBox() {
         commentFiles.comments.click();
         commentFiles.commentInput.sendKeys(ConfigurationReader.getProperty("comment"));
     }
@@ -50,9 +50,10 @@ public class CommentFiles_Step_Definition extends BasePage {
 
     @Then("Verify the comment is displayed in the comment section.")
     public void verify_the_comment_is_displayed_in_the_comment_section() {
+        BrowserUtils.sleep(3);
         String actualMessage = commentFiles.verifyMessage.getText();
-        Assert.assertEquals("There is mismatching",ConfigurationReader.getProperty("comment"), actualMessage.contains(ConfigurationReader.getProperty("comment")));
-    }
 
+        Assert.assertEquals("There is mismatching",ConfigurationReader.getProperty("comment"), actualMessage);
+    }
 
 }

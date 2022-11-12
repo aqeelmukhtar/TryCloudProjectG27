@@ -35,6 +35,6 @@ public class CommentFile {
     @FindBy(xpath = "//input[@class='submit icon-confirm has-tooltip']")
     public WebElement submitButton;
 
-    @FindBy(xpath = "//div[@class='icon-comment']")
+    @FindBy(xpath = "(//aside/div/div/section/div/ul/li/div)[2]")
     public WebElement verifyMessage;
 }
