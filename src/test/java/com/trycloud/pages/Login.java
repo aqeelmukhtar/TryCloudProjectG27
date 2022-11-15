@@ -27,7 +27,8 @@ public class Login {
 
 //    When you call this method,It will automatically take all information from config.properties and then login.
     public void autoLogin() {
-        Driver.getDriver().get("http://qa3.trycloud.net/index.php/login?clear=1");
+
+        Driver.getDriver().get(ConfigurationReader.getProperty("url"));
         username.sendKeys(ConfigurationReader.getProperty("user"));
         password.sendKeys(ConfigurationReader.getProperty("password"));
         loginButton.click();
