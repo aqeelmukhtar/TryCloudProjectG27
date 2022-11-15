@@ -517,14 +517,14 @@ public class BrowserUtils {
 
         }
     }
-    public static boolean isAllSelected(List<WebElement> allFiles){
-
-        for (WebElement file : allFiles) {
-
-            if(!file.isSelected()){
-                return false;
-            }
-        }
-        return true;
-    }
+//    public static boolean isAllSelected(List<WebElement> allFiles){
+//
+//        for (WebElement file : allFiles) {
+//
+//            if(!file.isSelected()){
+//                return false;
+//            }
+//        }
+//        return true;
+//    }
 }

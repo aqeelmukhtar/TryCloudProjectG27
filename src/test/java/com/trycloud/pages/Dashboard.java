@@ -20,7 +20,6 @@ public class Dashboard extends BasePage {
 
 
     public List<String> getModulesText(){
-
         List<String> modulesText=new ArrayList<>();
         for (int i = 0; i < modules.size()-1; i++) {
 
@@ -29,6 +28,7 @@ public class Dashboard extends BasePage {
             modulesText.add(modules.get(i).getText());
 
         }
+
         return modulesText;
 
     }
