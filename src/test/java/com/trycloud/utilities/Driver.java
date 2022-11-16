@@ -1,10 +1,12 @@
 package com.trycloud.utilities;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
+import javax.swing.*;
 import java.util.concurrent.TimeUnit;
 
 public class Driver {
@@ -61,7 +63,12 @@ public class Driver {
         if(driverPool.get()!=null) {
             driverPool.get().quit(); // this line will kill the session. value will noy be null
             driverPool.remove();
+
+
+
         }
+        
+        
     }
 
 }
