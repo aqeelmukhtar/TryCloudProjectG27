@@ -2,14 +2,13 @@ package com.trycloud.step_definitions;
 
 import com.trycloud.pages.Dashboard;
 import com.trycloud.pages.Login;
-import com.trycloud.utilities.BrowserUtils;
 import io.cucumber.java.en.*;
 import org.junit.Assert;
 
 import java.util.List;
 
 
-public class Dashboard_StepDef {
+public class Main_modules_StepDef {
 
     Login login=new Login();
 
