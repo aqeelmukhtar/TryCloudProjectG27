@@ -1,4 +1,4 @@
 package com.trycloud.pages;
 
-public class Talk {
+public class Talk extends BasePage{
 }
