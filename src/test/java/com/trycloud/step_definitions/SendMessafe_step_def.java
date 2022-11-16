@@ -3,7 +3,7 @@ package com.trycloud.step_definitions;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-public class Send_Message {
+public class SendMessafe_step_def {
 
     @When("user search user from the search box")
     public void user_search_user_from_the_search_box() {

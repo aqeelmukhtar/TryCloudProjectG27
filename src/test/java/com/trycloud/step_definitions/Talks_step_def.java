@@ -10,7 +10,7 @@ import io.cucumber.java.en.When;
 import org.junit.Assert;
 
 
-public class Talks_Module extends BasePage {
+public class Talks_step_def extends BasePage {
     Login login = new Login();
 
 
